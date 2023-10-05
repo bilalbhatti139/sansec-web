@@ -1,10 +1,11 @@
 {
   "scripts": {
     "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
-
   },
   "devDependencies": {
     "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "react-icons": "^4.11.0"
   }
- 
 }

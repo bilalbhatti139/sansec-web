@@ -652,9 +652,18 @@ video {
 .mr-2 {
   margin-right: 0.5rem;
 }
+.mr-4 {
+  margin-right: 70px;
+}
+.mr-5 {
+  margin-right: 147px;
+}
 
 .mb-10 {
   margin-bottom: 2.5rem;
+}
+.mb-12{
+margin-bottom: 75px;
 }
 
 .block {
@@ -682,7 +691,7 @@ video {
 }
 
 .h-10 {
-  height: 2.5rem;
+  height: 2.8rem;
 }
 
 .h-5 {
@@ -734,7 +743,7 @@ video {
 }
 
 .w-10\/12 {
-  width: 83.333333%;
+  width: 70%;
 }
 .w-9\/12 {
   width: 80%;
@@ -744,7 +753,7 @@ video {
   width: 50%;
 }
 .w-7\/12 {
-  width: 60%;
+  width: 70%;
 }
 .w-8\/12 {
   width: 40%;
@@ -773,7 +782,7 @@ video {
 }
 
 .grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1.3fr 1fr;
 }
 
 .grid-rows-2 {
@@ -816,7 +825,7 @@ video {
   gap: 1rem;
 }
 .gap-5 {
-  gap: 4rem;
+  gap: 5rem;
 }
 
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -835,6 +844,9 @@ video {
 
 .whitespace-nowrap {
   white-space: nowrap;
+}
+.basis-10{
+  flex-basis: 500px;
 }
 
 .rounded {
@@ -929,10 +941,6 @@ video {
   background-color: #3f1f71;
 }
 
-.bg-purple-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(88 28 135 / var(--tw-bg-opacity));
-}
 
 .bg-red-700 {
   --tw-bg-opacity: 1;
@@ -982,6 +990,10 @@ video {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.py-3{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
 
 .px-4 {
   padding-left: 1rem;
@@ -1002,12 +1014,20 @@ video {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
+.py-20 {
+  padding-top: 2.5rem;
+  padding-bottom: 4.5rem;
+}
 .py-12 {
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
 }
 
 .py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.py-9 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -1035,7 +1055,10 @@ video {
   padding-left: 2.75rem;
   padding-right: 2.75rem;
 }
-
+.px-9{
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1130,12 +1153,15 @@ video {
 }
 
 .px-40 {
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
 }
 
 .pl-3 {
   padding-left: 0.75rem;
+}
+.pl-4{
+  padding-left: 55px;
 }
 
 .pr-4 {
@@ -1146,6 +1172,12 @@ video {
 }
 .pr-6 {
   padding-right: 24rem;
+}
+.pr-8{
+  padding: 0 114px 0 190px;
+}
+.pr-10{
+  padding-right: 140px;
 }
 
 .pl-80 {
@@ -1230,7 +1262,7 @@ video {
 
 .text-4xl {
   font-size: 36px;
-  line-height: 2.25rem;
+  line-height: 3.25rem;
 }
 
 .text-5xl {
@@ -1515,7 +1547,7 @@ video {
 
 /* custom classes */
 .bg-5631A9 {
-  background: #5631a9;
+  background: #643BCB;
 }
 
 .bg-3F1F71 {
