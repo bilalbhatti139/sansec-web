@@ -1574,3 +1574,19 @@ video {
 .max-w-md {
   max-width: 480px;
 }
+
+.pt-10 {
+  padding-top: 40px;
+}
+
+@media (max-width: 1280px) {
+  .max-w-45 {
+    max-width: 45%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .flex-col-tab {
+    flex-direction: column;
+  }
+}
