@@ -429,7 +429,7 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 img,
 video {
-  /* max-width: 100%; */
+  max-width: 100%;
   height: auto;
 }
 
@@ -617,7 +617,7 @@ video {
 .mr-3 {
   margin-right: 0.75rem;
 }
-.tracking-widest{
+.tracking-widest {
   letter-spacing: 6px;
 }
 
@@ -662,8 +662,8 @@ video {
 .mb-10 {
   margin-bottom: 2.5rem;
 }
-.mb-12{
-margin-bottom: 75px;
+.mb-12 {
+  margin-bottom: 75px;
 }
 
 .block {
@@ -845,7 +845,7 @@ margin-bottom: 75px;
 .whitespace-nowrap {
   white-space: nowrap;
 }
-.basis-10{
+.basis-10 {
   flex-basis: 500px;
 }
 
@@ -941,7 +941,6 @@ margin-bottom: 75px;
   background-color: #3f1f71;
 }
 
-
 .bg-red-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
@@ -990,7 +989,7 @@ margin-bottom: 75px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-3{
+.py-3 {
   padding-top: 3rem;
   padding-bottom: 2rem;
 }
@@ -1055,7 +1054,7 @@ margin-bottom: 75px;
   padding-left: 2.75rem;
   padding-right: 2.75rem;
 }
-.px-9{
+.px-9 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
 }
@@ -1160,7 +1159,7 @@ margin-bottom: 75px;
 .pl-3 {
   padding-left: 0.75rem;
 }
-.pl-4{
+.pl-4 {
   padding-left: 55px;
 }
 
@@ -1173,10 +1172,10 @@ margin-bottom: 75px;
 .pr-6 {
   padding-right: 24rem;
 }
-.pr-8{
+.pr-8 {
   padding: 0 114px 0 190px;
 }
-.pr-10{
+.pr-10 {
   padding-right: 140px;
 }
 
@@ -1257,8 +1256,6 @@ margin-bottom: 75px;
     line-height: 21px;
   }
 }
-
-
 
 .text-4xl {
   font-size: 36px;
@@ -1547,9 +1544,33 @@ margin-bottom: 75px;
 
 /* custom classes */
 .bg-5631A9 {
-  background: #643BCB;
+  background: #643bcb;
 }
 
 .bg-3F1F71 {
   background: #3f1f71;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.min-h-700 {
+  min-height: 700px;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.max-w-md {
+  max-width: 480px;
 }
