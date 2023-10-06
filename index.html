@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sensec</title>
-    <link rel="stylesheet" href="./output.css" />
+    <!-- <link rel="stylesheet" href="./output.css" /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
@@ -87,8 +88,8 @@
         </div>
       </nav>
     </section>
-    <section>
-      <div class="bg-5631A9 py-7">
+    <section class="lg:block sm:hidden hidden">
+      <div class="bg-[#5631A9] py-7">
         <div class="container mx-auto">
           <div class="flex items-center">
             <p class="text-base text-white font-bold">
@@ -101,50 +102,87 @@
         </div>
       </div>
     </section>
-    <section class="bg-3F1F71 relative min-h-700">
-      <div
-        class="flex justify-between pt-5 container mx-auto flex-wrap flex-col-tab"
-      >
-        <div class="left-wrapper max-w-md">
-          <h1
-            class="font-poppins text-5xl text-white font-bold leading-3 pt-10"
-          >
-            Hacked store?
-          </h1>
-          <h1 class="font-poppins text-5xl text-white font-bold">
-            Make sure it never happens again with
-            <span class="text-yellow">eComscan.</span>
-          </h1>
-          <p class="font-poppins font-medium text-lg text-white py-14">
-            <span class="text-yellow">eComscan</span> is the most thorough
-            malware & vulnerability scanner for Magento, WooCommerce, and
-            Shopware.
-          </p>
-          <div class="flex items-center justify-start">
-            <img class="pr-5" src="../src/assets/images/magento.png" alt="" />
-            <img
-              class="pr-5"
-              src="../src/assets/images/woocommerce.png"
-              alt=""
-            />
-            <img class="pr-5" src="../src/assets/images/shopware.png" alt="" />
+    <section class="bg-[#3F1F71] relative min-h-[700px]">
+      <div class="container mx-auto sm:container">
+        <div
+          class="sm:flex-col flex-col justify-between items-center pt-5 flex-wrap"
+        >
+          <div class="pt-20 left-wrapper max-w-md sm:px-0 px-5">
+            <h1
+              class="font-poppins text-5xl text-white font-bold leading-3 pt-10"
+            >
+              Hacked store?
+            </h1>
+            <h1
+              class="font-poppins text-5xl text-white pt-6 leading-[55px] font-bold"
+            >
+              Make sure it never happens again with
+              <span class="text-[#FFCC00]">eComscan.</span>
+            </h1>
+            <p class="font-poppins font-medium text-lg text-white py-14 lg:pr-[100px]">
+              <span class="text-[#FFCC00]">eComscan</span> is the most thorough
+              malware & vulnerability scanner for Magento, WooCommerce, and
+              Shopware.
+            </p>
+            <div class="flex items-center justify-start">
+              <img
+                class="pr-5 w-full sm:block hidden"
+                src="./src/assets/images/magento.png"
+                alt=""
+              />
+              <img
+                class="pr-3 w-full sm:hidden block"
+                src="./src/assets/images/magento small.png"
+                alt=""
+              />
+
+              <img
+                class="pr-5 w-full sm:block hidden"
+                src="./src/assets/images/woocommerce.png"
+                alt=""
+              />
+              <img
+                class="pr-3 w-full sm:hidden block"
+                src="./src/assets/images/woosmall.png"
+                alt=""
+              />
+
+              <img
+                class="w-full sm:block hidden"
+                src="../src/assets/images/shopware.png"
+                alt=""
+              />
+              <img
+                class="w-full sm:hidden block"
+                src="./src/assets/images/shopsmall.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
-        <div class="image-wrapper absolute right-0 bottom-0 max-w-45">
-          <img src="./src/assets/images/code.png" alt="banner-img" />
+
+        <div
+          class="image-wrapper sm:static xl:absolute right-0 bottom-0 max-w-45"
+        >
+          <img
+            class="sm:pt-0 pt-7"
+            src="./src/assets/images/code.png"
+            alt="banner-img"
+          />
         </div>
       </div>
     </section>
+
     <section>
       <div class="container mx-auto">
         <div class="flex md:flex-row sm:flex-col flex-col justify-between">
           <div class="max-w-sm rounded overflow-hidden py-16">
             <img
               class="mx-auto"
-              src="../src/assets/images/card1.png"
+              src="./src/assets/images/roundcard5.png"
               alt="Card Image"
             />
-            <div class="px-8 py-4">
+            <div class="px-20 py-4">
               <p
                 class="font-poppins text-lg text-center font-normal text-[#000000]"
               >
@@ -158,7 +196,7 @@
               src="../src/assets/images/card2.png"
               alt="Card Image"
             />
-            <div class="px-8 py-4">
+            <div class="px-20 py-4">
               <p class="text-gray-700 text-lg text-center font-normal">
                 Deep server-side scanning with the broadest attack surface
                 coverage.
@@ -172,7 +210,7 @@
               src="../src/assets/images/card3.png"
               alt="Card Image"
             />
-            <div class="px-8 py-4">
+            <div class="px-20 py-4">
               <p class="text-gray-700 text-lg text-center font-normal">
                 Adobe and Europol partner with Sansec to prevent digital
                 skimming.
@@ -183,20 +221,22 @@
       </div>
     </section>
 
-    <section>
+    <section class="">
       <div
-        class="container mx-auto bg-[#F5F5F5] rounded-lg flex flex-col items-center justify-center my-5"
+        class="container sm:mx-auto bg-[#F5F5F5] rounded-lg flex flex-col items-center justify-center my-5"
       >
-        <div class="py-16 px-32">
+        <div class="py-16 lg:px-80 md:px-8 sm:px-6 px-9">
           <h3 class="text-center text text-[#3F1F71] font-bold text-2xl">
             Scanning your store for known malware or vulnerabilities takes about
             one minute:
           </h3>
         </div>
         <div
-          class="bg-[#222433] py-8 px-10 rounded-xl flex items-center justify-between mb-10 w-9/12"
+          class="bg-[#222433] lg:py-8 md:py-5 sm:py-3 py-2 sm:px-10 px-0 rounded-xl flex items-center justify-between mb-10 sm:w-9/12"
         >
-          <h2 class="text-white font-bold px-4 text-3xl tracking-widest">
+          <h2
+            class="text-white font-bold px-4 lg:text-3xl text-sm tracking-widest"
+          >
             $ curl https://ecomscan.com | sh
           </h2>
 
@@ -206,12 +246,14 @@
             alt=""
           />
         </div>
-        <div class="py-4 w-6/12">
+        <div class="py-4 lg:px-80 md:px-8 sm:px-6 px-9">
           <h3
             class="text-center text text-[#000000] font-normal text-[18px] pb-4"
           >
             Running eComscan is free and we’re obsessive about
-            <span class="text-green underline">data privacy. Paid plans</span>
+            <span class="text-[#00A19A] underline"
+              >data privacy. Paid plans</span
+            >
             include detailed reporting and troubleshooting guides.
           </h3>
         </div>
@@ -220,43 +262,47 @@
 
     <section>
       <div class="container mx-auto">
-        <div class="py-4 flex justify-center items-center">
+        <div
+          class="py-4 flex justify-center items-center lg:px-72 md:px-8 sm:px-6 px-9"
+        >
           <h3 class="text-center text-[#000000] font-normal text-sm pb-4">
             Compatible with: Magento / Adobe Commerce, WooCommerce & Shopware.
-            <span class="text-green underline"
+            <span class="text-[#00A19A] underline"
               >Manual installation Instructions</span
             >
           </h3>
         </div>
       </div>
     </section>
-    <section>
+    <section class="">
       <div class="bg-[#F5F5F5] py-5">
         <div class="container mx-auto">
-          <div class="flex justify-between">
+          <div class="flex justify-between lg:px-0 md:px-0 px-5">
             <h2 class="text-[#3F1F71] font-bold text-sm">MEDIA COVERAGE</h2>
 
             <div class="flex justify-center items-center pr-4">
               <img src="./src/assets/images/greenarrow.png" alt="" />
-              <h2 class="text-green font-bold text-sm px-3">SHOW ALL</h2>
+              <h2 class="text-[#00A19A] font-bold text-sm px-3">SHOW ALL</h2>
             </div>
           </div>
-          <div class="pr-6">
-            <p class="text-[#000000] font-normal text-2xl py-12 leading-6">
+          <div class="lg:pr-80 sm:px-0 px-5">
+            <p
+              class="text-[#000000] font-normal sm:text-2xl text-lg py-12 leading-6"
+            >
               Sansec focuses exclusively on ecommerce fraud, and we’re often
               first to the scene: 47% of our threat intel was previously
               undiscovered.
             </p>
           </div>
-          <div class="flex justify-between">
-            <div class="rounded overflow-hidden shadow-lg my-4 mr-4">
+          <div class="flex flex-col lg:flex-row justify-between">
+            <div class="rounded overflow-hidden shadow-lg my-4 lg:mr-4">
               <img
                 class="w-full"
                 src="./src/assets/images/largecard.png"
                 alt="Card Image"
               />
               <div class="px-8 py-4">
-                <div class="font-bold text-xl mb-2 py-4">
+                <div class="font-bold text-xl mb-2 py-4 lg:pr-36">
                   <h3 class="text-[#3F1F71] font-bold text-lg">
                     Sansec at Europol training: 50,000+ stores hacked
                   </h3>
@@ -270,7 +316,7 @@
               </div>
               <div class="flex items-center justify-start px-8 py-7">
                 <img class="" src="./src/assets/images/greenarrow.png" alt="" />
-                <h2 class="text-green font-bold text-sm px-3">READ MORE</h2>
+                <h2 class="text-[#00A19A] font-bold text-sm px-3">READ MORE</h2>
               </div>
             </div>
             <div class="rounded overflow-hidden shadow-lg my-4">
@@ -295,7 +341,7 @@
               </div>
               <div class="flex items-center justify-start px-8 py-7">
                 <img src="./src/assets/images/greenarrow.png" alt="" />
-                <h2 class="text-green font-bold text-sm px-3">
+                <h2 class="text-[#00A19A] font-bold text-sm px-3">
                   READ MORE ON ADOBE.COM
                 </h2>
               </div>
@@ -307,36 +353,87 @@
     <section>
       <div class="bg-[#F5F5F5]">
         <div class="container mx-auto">
-          <div class="flex items-center justify-between py-10">
-            <img src="./src/assets/images/BBC.png" alt="" />
-            <img src="./src/assets/images/Reuter.png" alt="" />
-            <img src="./src/assets/images/ZDNet.png" alt="" />
-            <img src="./src/assets/images/tech.png" alt="" />
-            <img src="./src/assets/images/ars.png" alt="" />
+          <div
+            class="flex lg:flex-nowrap flex-wrap items-center justify-between py-10 sm:px-0 px-5"
+          >
+            <img
+              class="sm:block hidden"
+              src="./src/assets/images/BBC.png"
+              alt=""
+            />
+            <img
+              class="sm:hidden block"
+              src="./src/assets/images/bbcsmall.png"
+              alt=""
+            />
+            <img
+              class="sm:block hidden"
+              src="./src/assets/images/Reuter.png"
+              alt=""
+            />
+            <img
+              class="sm:hidden block"
+              src="./src/assets/images/reutersmall.png"
+              alt=""
+            />
+            <img
+              class="sm:block hidden"
+              src="./src/assets/images/ZDNet.png"
+              alt=""
+            />
+            <img
+              class="sm:hidden block"
+              src="./src/assets/images/zdnetsmall.png"
+              alt=""
+            />
+            <img
+              class="sm:block hidden"
+              src="./src/assets/images/tech.png"
+              alt=""
+            />
+            <img
+              class="sm:hidden block"
+              src="./src/assets/images/techsmall.png"
+              alt=""
+            />
+            <img
+              class="sm:block hidden"
+              src="./src/assets/images/ars.png"
+              alt=""
+            />
+            <img
+              class="sm:hidden block"
+              src="./src/assets/images/technicasmall.png"
+              alt=""
+            />
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="bg-yellow-700 py-16">
+      <div class="bg-[#FFCC00] py-16">
         <div class="container mx-auto my-5">
-          <div class="flex justify-between">
+          <div class="flex justify-between lg:px-0 sm:px-0 px-5">
             <h2 class="text-[#3F1F71] font-bold text-sm">SANSEC RESEARCH</h2>
 
             <div class="flex justify-center items-center">
               <img src="./src/assets/images/greenarrow.png" alt="" />
-              <h2 class="text-green font-bold text-sm px-3">SHOW ALL</h2>
+              <h2 class="text-[#00A19A] font-bold text-sm px-3">SHOW ALL</h2>
             </div>
           </div>
-          <div class="w-10/12 py-5">
-            <p class="text-[#000000] font-normal text-2xl py-10 leading-6">
+          <div class="lg:pr-80 sm:px-0 px-5">
+            <p
+              class="text-[#000000] font-normal sm:text-2xl text-lg py-10 leading-6"
+            >
               The Sansec Early Breach Global Detection Network inspects over a
               million online stores every day, and reports anomalies that our
               research team investigates.
             </p>
           </div>
-          <div class="flex justify-between">
-            <div class="bg-white rounded overflow-hidden shadow-lg my-4 mr-4">
+          <div class="flex flex-col lg:flex-row justify-between">
+            <div
+              class="bg-white rounded overflow-hidden shadow-lg my-4 sm:mr-4 sm:mx-0 mx-4"
+            >
               <div class="px-7 py-8">
                 <div class="font-bold text-xl mb-2">
                   <h3 class="text-[#3F1F71] font-bold text-lg">
@@ -352,10 +449,12 @@
               </div>
               <div class="flex items-center justify-start px-6 py-7">
                 <img src="./src/assets/images/greenarrow.png" alt="" />
-                <h2 class="text-green font-bold text-sm px-3">READ MORE</h2>
+                <h2 class="text-[#00A19A] font-bold text-sm px-3">READ MORE</h2>
               </div>
             </div>
-            <div class="bg-white rounded overflow-hidden shadow-lg my-4">
+            <div
+              class="bg-white rounded overflow-hidden shadow-lg my-4 sm:mr-4 sm:mx-0 mx-4"
+            >
               <div class="px-6 py-8">
                 <div class="font-bold text-xl mb-2">
                   <h3 class="text-[#3F1F71] font-bold text-lg">
@@ -372,7 +471,7 @@
               <div class="flex items-center px-6 py-7">
                 <img src="./src/assets/images/greenarrow.png" alt="" />
 
-                <h3 class="text-green font-bold text-sm px-3">READ MORE</h3>
+                <h3 class="text-[#00A19A] font-bold text-sm px-3">READ MORE</h3>
               </div>
             </div>
           </div>
@@ -380,17 +479,19 @@
       </div>
     </section>
     <section>
-      <div class="bg-purple-600 py-10">
+      <div class="bg-[#3F1F71] py-10">
         <div class="container mx-auto my-5">
           <div class="text-center">
             <p class="text-white text-sm font-bold">ECOMSCAN</p>
-            <h2 class="text-white text-4xl font-bold py-10 px-40">
+            <h2
+              class="text-white sm:text-4xl text-2xl font-bold py-10 lg:px-40 sm:px-20 px-7"
+            >
               Specifically designed to combat & prevent fraud in ecommerce
               applications
             </h2>
-            <h2 class="text-white text-xl font-normal px-40">
-              <span class="text-yellow font-bold">eComscan</span> is not another
-              generic security solution. Reports are highly specific and
+            <h2 class="text-white text-xl font-normal lg:px-40 sm:px-20 px-7">
+              <span class="text-[#FFCC00] font-bold">eComscan</span> is not
+              another generic security solution. Reports are highly specific and
               application-aware, covering every known attack vector our
               forensics team has uncovered in over a decade of daily ecommerce
               fraud reseach.
@@ -398,24 +499,33 @@
           </div>
           <div class="flex justify-center items-center">
             <img
-              class="items-center text-center pt-5"
+              class="items-center text-center pt-5 lg:block hidden"
               src="./src/assets/images/bigbanner.png"
               alt=""
             />
+            <img class="items-center text-center pt-5 lg:hidden block" src="./src/assets/images/smallcode.png" alt="">
           </div>
 
-          <div class="w-full flex justify-center items-center">
+          <div class="lg:px-36 flex justify-center items-center">
             <div
-              class="gap-5 py-16 flex justify-between items-center pr-8 mb-12"
+              class="gap-24 py-16 flex lg:flex-row flex-col justify-between items-center lg:pr-8 sm:px-0 px-7 sm:mb-12 mb-0"
             >
               <div>
-                <img class="" src="./src/assets/images/roundcard.png" alt="" />
+                <img
+                  class="max-w-max"
+                  src="./src/assets/images/roundcard.png"
+                  alt=""
+                />
               </div>
               <div class="">
-                <h3 class="font-bold text-2xl pb-4 text-white">
+                <h3
+                  class="font-bold text-2xl pb-4 text-white lg:text-left text-center"
+                >
                   50k+ malware signatures and counting
                 </h3>
-                <p class="font-light text-2xl text-white">
+                <p
+                  class="font-light text-2xl text-white lg:text-left text-center"
+                >
                   Sansec has the largest collection and coverage of ecommerce
                   malware. If there’s a new attack method, we typically discover
                   it weeks ahead of anyone else.
@@ -423,18 +533,26 @@
               </div>
             </div>
           </div>
-          <div class="w-full flex justify-center items-center">
+          <div class="lg:px-36 flex justify-center items-center">
             <div
-              class="gap-5 py-16 flex justify-between items-center pr-8 mb-12"
+              class="gap-24 py-16 flex lg:flex-row flex-col justify-between items-center lg:pr-8 sm:px-0 px-7 sm:mb-12 mb-0"
             >
               <div>
-                <img class="" src="./src/assets/images/Frame 23.png" alt="" />
+                <img
+                  class="max-w-max"
+                  src="./src/assets/images/Frame 23.png"
+                  alt=""
+                />
               </div>
               <div class="">
-                <h3 class="font-bold text-2xl pb-4 text-white">
+                <h3
+                  class="font-bold text-2xl pb-4 text-white lg:text-left text-center"
+                >
                   Dedicated anomaly monitoring & investigation
                 </h3>
-                <p class="font-light text-2xl text-white">
+                <p
+                  class="font-light text-2xl text-white lg:text-left text-center"
+                >
                   The Sansec Early Breach Global Detection Network inspects over
                   a million online stores every day, and
                   <span class="underline">reports anomalies</span> that our
@@ -444,16 +562,26 @@
               </div>
             </div>
           </div>
-          <div class="w-full flex justify-center items-center">
-            <div class="gap-5 py-16 flex justify-between items-center pr-8">
+          <div class="lg:px-36 flex justify-center items-center">
+            <div
+              class="gap-24 py-16 flex lg:flex-row flex-col justify-between items-center lg:pr-8 sm:px-0 px-7 mb-12"
+            >
               <div>
-                <img class="" src="./src/assets/images/roundcard3.png" alt="" />
+                <img
+                  class="max-w-max"
+                  src="./src/assets/images/roundcard3.png"
+                  alt=""
+                />
               </div>
               <div class="">
-                <h3 class="font-bold text-2xl pb-4 text-white">
+                <h3
+                  class="font-bold text-2xl pb-4 text-white lg:text-left text-center"
+                >
                   Broadest coverage of attack surface
                 </h3>
-                <p class="font-light text-2xl text-white">
+                <p
+                  class="font-light text-2xl text-white lg:text-left text-center"
+                >
                   Our smart Golang server agent does not just monitor files, but
                   also databases, processes, scheduled tasks and anything else
                   that may contain malicious code. Sansec will find malware that
@@ -469,18 +597,31 @@
     <section>
       <div class="bg-purple-900">
         <div class="container mx-auto">
-          <div class="flex justify-between items-center pt-16">
+          <div
+            class="flex lg:flex-row flex-col justify-between items-center pt-16"
+          >
             <div class="px-6">
               <h3 class="font-bold text-2xl text-white py-4">
                 Get alerted in seconds,not days
               </h3>
-              <p class="font-light text-2xl text-white pr-10">
+              <p class="font-normal text-3xl text-white pr-16">
                 If new security threats are found that are relevant to one of
                 your applications. the eComscan detection engine will send
                 instant, actionable alerts via mail, Slack or API webhook.
               </p>
             </div>
-            <img src="./src/assets/images/smallbanner.png" alt="" />
+            <div>
+              <img
+                class="sm:block hidden max-w-max"
+                src="./src/assets/images/smallbanner.png"
+                alt=""
+              />
+              <img
+                class="sm:hidden block pt-7 max-w-max"
+                src="./src/assets/images/mobbanner.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -488,97 +629,123 @@
     <section class="bg-[#F5F5F5]">
       <div class="container mx-auto">
         <div class="py-5 flex justify-center items-center">
-          <h3 class="text-center text-[#3F1F71] font-bold text-[14px] pb-4">
+          <h3 class="text-center text-[#3F1F71] font-bold text-[18px] pb-4">
             eComscan is trusted by 7000+ global brands & leading agencies
           </h3>
         </div>
-        <div class="flex items-center justify-between py-5 px-9 flex-wrap">
-          <div class="w-25-per px-2 pb-12">
-            <img src="./src/assets/images/company1.png" alt="company-logo" />
+        <div class="flex lg:flex-col flex-row">
+          <div class="flex lg:flex-row flex-col lg:w-full w-2/4 items-center justify-between py-5 px-9">
+            <div class="w-25-per px-2 pb-12">
+              <img src="./src/assets/images/company1.png" alt="company-logo" />
+            </div>
+            <div class="w-25-per px-2 pb-12">
+              <img src="./src/assets/images/company2.png" alt="company-logo" />
+            </div>
+            <div class="w-25-per px-2 pb-12">
+              <img src="./src/assets/images/unitedlogo.png" alt="company-logo" />
+            </div>
+            <div class="w-25-per px-2 pb-12">
+              <img src="./src/assets/images/company4.png" alt="company-logo" />
+            </div>
           </div>
-          <div class="w-25-per px-2 pb-12">
-            <img src="./src/assets/images/company2.png" alt="company-logo" />
+
+          <div class=" flex lg:flex-row flex-col lg:w-full w-2/4 items-center justify-between py-5 px-9">
+            <div class="w-25-per px-2 pb-12">
+              <img src="./src/assets/images/company5.png" alt="company-logo" />
+            </div>
+            <div class="w-25-per px-2 pb-12">
+              <img
+                src="./src/assets/images/logo-with-otter-white 1.png"
+                alt="company-logo"
+              />
+            </div>
+            <div class="w-25-per px-2 pb-12">
+              <img src="./src/assets/images/company7.png" alt="company-logo" />
+            </div>
+            <div class="w-25-per px-2 pb-12">
+              <img src="./src/assets/images/company8.png" alt="company-logo" />
+            </div>
           </div>
-          <div class="w-25-per px-2 pb-12">
-            <img src="./src/assets/images/unitedlogo.png" alt="company-logo" />
+  
+
+          <div class="lg:block hidden">
+            <div class="flex flex-row items-centern justify-between py-5 px-9">
+              <div class="w-25-per px-2 pb-12">
+                <img src="./src/assets/images/red logo 1.png" alt="company-logo" />
+              </div>
+              <div class="w-25-per px-2 pb-12">
+                <img src="./src/assets/images/company10.png" alt="company-logo" />
+              </div>
+              <div class="w-25-per px-2 pb-12">
+                <img src="./src/assets/images/hyva_logo 1.png" alt="company-logo" />
+              </div>
+              <div class="w-25-per px-2 pb-12">
+                <img src="./src/assets/images/company12.png" alt="company-logo" />
+              </div>
+         
           </div>
-          <div class="w-25-per px-2 pb-12">
-            <img src="./src/assets/images/company4.png" alt="company-logo" />
+
           </div>
-          <div class="w-25-per px-2 pb-12">
-            <img src="./src/assets/images/company5.png" alt="company-logo" />
-          </div>
-          <div class="w-25-per px-2 pb-12">
-            <img
-              src="./src/assets/images/logo-with-otter-white 1.png"
-              alt="company-logo"
-            />
-          </div>
-          <div class="w-25-per px-2 pb-12">
-            <img src="./src/assets/images/company7.png" alt="company-logo" />
-          </div>
-          <div class="w-25-per px-2 pb-12">
-            <img src="./src/assets/images/company8.png" alt="company-logo" />
-          </div>
-          <div class="w-25-per px-2 pb-12">
-            <img src="./src/assets/images/red logo 1.png" alt="company-logo" />
-          </div>
-          <div class="w-25-per px-2 pb-12">
-            <img src="./src/assets/images/company10.png" alt="company-logo" />
-          </div>
-          <div class="w-25-per px-2 pb-12">
-            <img src="./src/assets/images/hyva_logo 1.png" alt="company-logo" />
-          </div>
-          <div class="w-25-per px-2 pb-12">
-            <img src="./src/assets/images/company12.png" alt="company-logo" />
-          </div>
+            
+
         </div>
+        
+        
+        
+       
+        
+      
       </div>
     </section>
 
-    <section>
-      <div class="bg-[#F5F5F5] p-4">
+    <section class="">
+      <div
+        class="container sm:mx-auto bg-[#F5F5F5] rounded-lg flex flex-col items-center justify-center my-5"
+      >
+        <div class="py-16 lg:px-80 md:px-8 sm:px-6 px-9">
+          <h3 class="text-center text text-[#3F1F71] font-bold text-2xl">
+            Scanning your store for known malware or vulnerabilities takes about
+            one minute:
+          </h3>
+        </div>
         <div
-          class="container mx-auto bg-white rounded-lg flex flex-col items-center justify-center my-5"
+          class="bg-[#222433] lg:py-8 md:py-5 sm:py-3 py-2 sm:px-10 px-0 rounded-xl flex items-center justify-between mb-10 sm:w-9/12"
         >
-          <div class="py-16 px-32">
-            <h3 class="text-center text text-[#3F1F71] font-bold text-2xl">
-              Scanning your store for known malware or vulnerabilities takes
-              about one minute:
-            </h3>
-          </div>
-          <div
-            class="bg-[#222433] py-8 px-10 rounded-xl flex items-center justify-between mb-10 w-9/12"
+          <h2
+            class="text-white font-bold px-4 lg:text-3xl text-sm tracking-widest"
           >
-            <h2 class="text-white font-bold px-4 text-3xl tracking-widest">
-              $ curl https://ecomscan.com | sh
-            </h2>
+            $ curl https://ecomscan.com | sh
+          </h2>
 
-            <img
-              class="md:block sm:hidden hidden"
-              src="../src/assets/images/copy.png"
-              alt=""
-            />
-          </div>
-          <div class="py-4 w-6/12">
-            <h3
-              class="text-center text text-[#000000] font-normal text-[18px] pb-4"
+          <img
+            class="md:block sm:hidden hidden"
+            src="../src/assets/images/copy.png"
+            alt=""
+          />
+        </div>
+        <div class="py-4 lg:px-80 md:px-8 sm:px-6 px-9">
+          <h3
+            class="text-center text text-[#000000] font-normal text-[18px] pb-4"
+          >
+            Running eComscan is free and we’re obsessive about
+            <span class="text-[#00A19A] underline"
+              >data privacy. Paid plans</span
             >
-              Running eComscan is free and we’re obsessive about
-              <span class="text-green underline">data privacy. Paid plans</span>
-              include detailed reporting and troubleshooting guides.
-            </h3>
-          </div>
+            include detailed reporting and troubleshooting guides.
+          </h3>
         </div>
       </div>
     </section>
+
     <section>
       <div class="bg-[#F5F5F5]">
         <div class="container mx-auto">
-          <div class="py-4 flex justify-center items-center">
+          <div
+            class="py-4 flex justify-center items-center lg:px-72 md:px-8 sm:px-6 px-9"
+          >
             <h3 class="text-center text-[#000000] font-normal text-sm pb-4">
               Compatible with: Magento / Adobe Commerce, WooCommerce & Shopware.
-              <span class="text-green underline"
+              <span class="text-[#00A19A] underline"
                 >Manual installation Instructions</span
               >
             </h3>
@@ -587,13 +754,15 @@
       </div>
     </section>
     <section>
-      <div class="bg-black-700">
+      <div class="bg-[#1F1F24]">
         <div class="container mx-auto">
-          <div class="pt-16 pb-4 pl-4">
-            <h2 class="text-white font-bold text-4xl">
+          <div class="pt-14 pb-4 pl-4">
+            <h2
+              class="text-white font-bold lg:text-4xl text-2xl lg:text-left text-center lg:pb-0 pb-9"
+            >
               Frequently asked questions
             </h2>
-            <ul class="py-20 px-20">
+            <ul class="py-20 px-20 lg:block hidden">
               <li class="text-white">
                 I don’t feel comfortable installing eComscan on my server. Any
                 alternatives?
@@ -609,11 +778,11 @@
     </section>
 
     <section>
-      <div class="bg-black-800">
+      <div class="bg-[#000000]">
         <div class="container mx-auto py-10">
           <div class="flex justify-between">
-            <div>
-              <h3 class="text-white text-lg">Made with ❤ in Europe</h3>
+            <div class="lg:block hidden">
+              <span class="text-white flex items-center text-lg">Made with <img src="./src/assets/images/Heart 1 (2).png" alt=""> in Europe</span>
               <ul class="py-8">
                 <li class="text-white">Sansec BV</li>
                 <li class="text-white">Kanaalweg 50</li>
@@ -622,16 +791,17 @@
                 <li class="text-green">info@sansec.io</li>
               </ul>
             </div>
-            <div>
+            <div class="lg:block hidden">
               <h3 class="text-white text-lg">Product</h3>
               <ul class="py-8">
                 <li class="text-white text-base pb-4">Pricing</li>
+                <li class="text-white text-base pb-4">Spport</li>
                 <li class="text-white text-base pb-4">Partners</li>
                 <li class="text-white text-base pb-4">Malware Library</li>
                 <li class="text-white text-base pb-4">System Status</li>
               </ul>
             </div>
-            <div class="">
+            <div class="lg:block hidden">
               <h3 class="text-white text-lg">Research</h3>
               <ul class="py-8">
                 <li class="text-white text-base pb-4">News</li>
@@ -640,24 +810,37 @@
                 <li class="text-white text-base pb-4">Login</li>
               </ul>
             </div>
-            <div class="basis-10">
-              <p class="text-white font-bold text-3xl whitespace-pre-wrap">
+            <div class="lg:basis-96 sm:px-0 px-6">
+              <p class="text-white font-bold text-3xl ">
                 Stay up to date with the latest eCommerce attacks
               </p>
-              <div class="flex flex-col py-4">
+              <div class="flex flex-col lg:items-start items-center py-4">
                 <input
                   type="text"
                   placeholder="Email address"
-                  class="w-7/12 h-10 pl-3"
+                  class="lg:w-9/12 w-7/12 h-10 pl-3"
                 />
-                <div class="py-5">
+                <div class="py-5 lg:w-full w-9/12 lg:text-left text-center">
                   <button
-                    class="text-white bg-gray-500 py-2 w-7/12 rounded-full"
+                    class="text-white bg-gray-500 py-2 w-9/12 rounded-full"
                   >
                     Submit
                   </button>
                 </div>
               </div>
+            </div>
+           
+          </div>
+          <div class="lg:hidden block px-6">
+            <div class="flex flex-col">
+              <img src="./src/assets/images/logo.png" alt="">
+              <h2 class="text-white text-center font-semibold text-2xl ">Secure stores, happy shoppers</h2>
+              <div class="border border-b-1 my-7"></div>
+              <div class="flex items-center">
+
+              </div>
+              <span class="text-white text-sm text-center leading-10">Terms & Conditions  |  Privacy & Cookie Policy</span>
+              <span class="text-white text-sm text-center leading-10">Company Reg 771655187   |   Tax NL 860920306B01</span>
             </div>
           </div>
         </div>

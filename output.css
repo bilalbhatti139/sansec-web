@@ -543,6 +543,9 @@ video {
 
 .container {
   width: 100%;
+  @media (max-width: 425px){
+    max-width: 340px;
+  }
 }
 
 @media (min-width: 640px) {
@@ -1168,6 +1171,10 @@ video {
 }
 .pr-5 {
   padding-right: 4rem;
+  @media (max-width: 630px){
+    padding-right: 0rem;
+
+  }
 }
 .pr-6 {
   padding-right: 24rem;
@@ -1557,6 +1564,9 @@ video {
 
 .absolute {
   position: absolute;
+  @media (max-width: 1024px){
+    position: static;
+  }
 }
 
 .right-0 {
@@ -1591,10 +1601,20 @@ video {
   .max-w-45 {
     max-width: 45%;
   }
+  @media (max-width: 1024px){
+    .max-w-45{
+      max-width: 100%;
+    }
+   
+  }
 }
 
 @media (max-width: 1024px) {
   .flex-col-tab {
+    display: flex;
     flex-direction: column;
   }
+}
+@media (max-width: 450px){
+
 }
